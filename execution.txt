@@ -1,0 +1,1 @@
+python3 mail_sender.py --addresseess documents/addressees.txt --mail_sender documents/senderdetails.txt

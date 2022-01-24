@@ -1,13 +1,41 @@
 
 h1{
-    color: rgb(255, 123, 0);
+    color: rgb(255, 255, 255);
     font-size: 50px;
     margin: 40px;
-    text-align: center;
+    text-align: left;
 }
 div{
     margin-right: 30%;
     margin-left: 30%;
     text-align: center;
     text-align: justify;
+    background-color: white;
+    font-family:Calibri (Body);
+}
+img{
+    width: 100%;
+}
+
+
+
+.title{
+    margin-right: 30%;
+    margin-left: 30%;
+    text-align: center;
+    text-align: justify;
+    background-color: rgb(255, 0, 0);
+    font-family:Calibri (Body);
+}
+
+button{
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    margin-left: 25%;
+    font-size: 30px;
+    border-radius: 15px;
+    color: white;
 }

@@ -1,1 +1,1 @@
-python3 mail_sender.py --addresseess documents/addressees.txt --mail_sender documents/senderdetails.txt
+python3 mail_sender.py --addresseess documents/addressees.txt --mail_sender documents/senderdetails.txt --message documents/Main.html --asunto Automatic Mail

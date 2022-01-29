@@ -1,0 +1,4 @@
+model/AutomaticEmailSender.class
+model/SenderLoginDetails.class
+model/EmailComponents.class
+model/ExportFromDatabaseToTxt.class

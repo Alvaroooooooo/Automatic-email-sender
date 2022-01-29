@@ -6,22 +6,9 @@ import java.io.InputStreamReader;
 
 public class PythonScriptLauncher {
 
-    public String user;
-    public String password;
-    public String subject;
-    public String message;
-
-    public PythonScriptLauncher(String user, String password, String subject, String message) {
-        this.user = user;
-        this.password = password;
-        this.subject = subject;
-        this.message = message;
-    }
-
     public void launcher() {
 
         ProcessBuilder pb = new ProcessBuilder("python3", System.getProperty("user.dir") + "/" + "mail_sender.py");
-
         pb.inheritIO();
         Process process = null;
 

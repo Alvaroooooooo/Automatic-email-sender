@@ -4,8 +4,13 @@ import java.sql.SQLException;
 
 public class AutomaticEmailSender {
 
-    public void filterEmailsFromDatabaseToTxt(String path, String nameTable, String emailsColumn, String ageColumn, String countryColumn, String filterAge, String filterCountry) {
-        ExportFromDatabaseToTxt e = new ExportFromDatabaseToTxt(path, nameTable, emailsColumn, ageColumn, countryColumn, filterAge, filterCountry);
+    public void exportEmailDetailsToTxt(String subject, String message) {
+        ExportEmailDetailsToTxt e =new ExportEmailDetailsToTxt(subject, message);
+        e.exporter();
+    }
+
+    public void filterEmailsFromDatabaseToTxt(String filterAge, String filterCountry) {
+        ExportFromDatabaseToTxt e = new ExportFromDatabaseToTxt(filterAge, filterCountry);
         try {
             e.exporter();
         } catch (SQLException ex) {
@@ -13,8 +18,8 @@ public class AutomaticEmailSender {
         }
     }
 
-    public void pythonScriptLauncher(String user, String password, String subject, String message) {
-        PythonScriptLauncher p =new PythonScriptLauncher(user, password, subject, message);
+    public void pythonScriptLauncher() {
+        PythonScriptLauncher p = new PythonScriptLauncher();
         p.launcher();
     }
 }

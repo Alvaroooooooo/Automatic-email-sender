@@ -16,7 +16,8 @@ def txtReader(txt):
 
 if __name__ == "__main__":
 
-    user, password = "cuentadeprueba03052021@gmail.com", "alvaroteamo"
+    user, password = "cuentadeprueba03052021@gmail.com", "Prueba12345"
+    
     subject, message = txtReader("documents/emailDetails.txt")
     adresseess = txtReader("documents/addressees.txt")
 
